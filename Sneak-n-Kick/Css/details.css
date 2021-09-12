@@ -1,0 +1,376 @@
+  
+  html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+  }
+  
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color:#24262b;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 500;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  li {
+    list-style: none;
+  }
+  span{
+  color:lightgray;
+  font-size: 19px;}
+  
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .container-md {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .container {
+    padding: 0 3rem;
+    }
+  
+    .container-md {
+      padding: 0 3rem;
+    }
+  }
+  
+  /* Header */
+  .header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--grey-alt);
+    overflow: hidden;
+  }
+.btn {
+    display: inline-block;
+    background-color: #e91e63;
+    padding: 1.2rem 4rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3rem;
+  }
+  
+  
+  
+  
+  /* Detail */
+  .product-detail .details {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 7rem;
+  }
+  
+  .product-detail .left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-detail .left .main {
+    text-align: center;
+    margin-bottom: 2rem;
+    height: 45rem;
+    padding: 3rem;
+  }
+  
+  
+  
+  .product-detail .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .product-detail .thumbnail {
+    width: 10rem;
+    height: 10rem;
+    background-color: #f6f2f1;
+    text-align: center;
+  }
+  
+  .product-detail .thumbnail img {
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-detail .right span {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-decoration-line: underline;
+  }
+  
+  .product-detail .right h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .product-detail .right .price {
+    font-size: 600;
+    font-size: 2rem;
+    color:#e91e63;
+    margin-bottom: 2rem;
+  }
+  
+  .product-detail .right div {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .product-detail .right select {
+    font-family: "Poppins", sans-serif;
+    width: 20rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    appearance: none;
+    outline: none;
+  }
+  
+  .product-detail form {
+    margin-bottom: 2rem;
+  }
+  
+  .product-detail form span {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 0;
+  }
+  
+  .product-detail .form {
+    margin-bottom: 3rem;
+  }
+  
+  .product-detail .form input {
+    padding: 0.8rem;
+    text-align: center;
+    width: 3.5rem;
+    margin-right: 2rem;
+  }
+  
+  .product-detail .form .addCart {
+    background: #e91e63;
+    padding: 0.8rem 4rem;
+    color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+  }
+  
+  .product-detail h3 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  p{
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+
+  @media only screen and (max-width: 996px) {
+    .product-detail .left {
+      width: 30rem;
+      height: 45rem;
+    }
+  
+    .product-detail .details {
+      gap: 3rem;
+    }
+  
+    .product-detail .thumbnails {
+      width: 30rem;
+      gap: 0.5rem;
+    }
+  
+    .product-detail .thumbnail {
+      width: auto;
+      height: 10rem;
+      background-color: #f6f2f1;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .product-detail .details {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-detail .right {
+      margin-top: 10rem;
+    }
+  
+    .product-detail .left {
+      width: 100%;
+      height: 45rem;
+    }
+  
+    .product-detail .details {
+      gap: 3rem;
+    }
+  
+    .product-detail .thumbnails {
+      width: 100%;
+      gap: 0.5rem;
+    }
+  }
+  /* Footer */
+
+.container{
+  max-width: 1170px;
+  margin:auto;
+  }
+  .row{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  ul{
+  list-style: none;
+  }
+  .footer{
+  background-color: #34373d;
+    padding: 70px 0;
+  z-index: -1;
+  }
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  }
+  .footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+  }
+  .footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(45, 65, 60, 0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+  }
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html{
+    scroll-behavior: smooth;
+    transition-delay: 1ms;
+}
+
+header{
+margin-bottom: 20px;
+}
+/* Navigation Bar */
+nav{
+	background-color: #34373d;
+	color: #e91e63;
+	display: flex;
+	align-items: center;
+	min-height: 8vh;
+	justify-content: space-around;
+	font-family: 'Poppins',sans-serif;
+
+}
+.logo a{
+	color: rgb(228, 218, 218);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 18px;
+}
+.nav-links{
+	display: flex;
+	width: 34%;
+	justify-content: space-around;
+}
+.nav-links a{
+	color: rgb(228, 218, 218);
+	letter-spacing: 3px;
+	font-weight:500;
+}
+
+nav ul{
+    list-style-type: none;
+}
